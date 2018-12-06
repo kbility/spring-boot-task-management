@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>My index Page</title>
+</head>
+<body>
+    <div class="container mySpace">
+        <div>
+            There was an error |<span th:text="${message}"></span>|<span th:text="${status}" class="text text-danger"></span>
+
+        </div>
+        <div>Please contact Mohbility if you have reached this far</div>
+    </div>
+</body>
+</html>
